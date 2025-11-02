@@ -4,18 +4,14 @@
 
 backend:
   name: github
-  repo: CaoKewen/lxy-personal-site  # 你的仓库
-  branch: main                      # 你的主分支
-
-  # 使用更简单的纯客户端 'pkce' 登录流程
+  repo: CaoKewen/lxy-personal-site
+  branch: main
   auth_type: pkce
-
-  # 把你从 GitHub 复制的 Client ID 粘贴到这里
   app_id: "Ov23liCLyZGsPqEEQw65"
 
 # 2. 媒体（图片）设置：图片上传到哪里
 # (注意：我把它改到了 public/uploads，这更标准)
-media_folder: "public/uploads"
+media_folder: "src/static/uploads"
 public_folder: "/uploads"
 
 # 3. 内容集合 (Collections)：定义哪些内容可以编辑
