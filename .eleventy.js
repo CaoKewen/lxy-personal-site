@@ -1,7 +1,7 @@
 module.exports = function(eleventyConfig) {
   // Copy static files and admin folder directly to output
-  eleventyConfig.addPassthroughCopy({ "src/static": "." });
-  eleventyConfig.addPassthroughCopy({ "cms": "cms" });
+  eleventyConfig.addPassthroughCopy("src/static");
+  eleventyConfig.addPassthroughCopy("cms");
   eleventyConfig.addPassthroughCopy("invite-template.html");
 
   // Date filter
