@@ -2,7 +2,8 @@
 layout: layouts/base.njk
 title: First Post — Getting Started
 description: First post in LXY's Learning Journal
-date: 2025-11-02
+date: 2025-11-02T00:00:00Z
+tags: posts
 permalink: /posts/2025-11-02-first-post/
 ---
 # First Post — Getting Started
