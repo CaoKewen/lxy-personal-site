@@ -1,14 +1,13 @@
 # -----------------------------------------------------------------
 # Decap CMS 配置文件 (为你的 Eleventy 项目定制)
 # -----------------------------------------------------------------
-publish_mode: editorial_workflow
-show_workflow: true
 
-# 1. 后台设置：使用 Netlify Identity 和 Git Gateway
+# ↓↓↓ 这是新的登录设置 ↓↓↓
 backend:
-  name: git-gateway
-  branch: main # 确保这是你的 GitHub 主分支
-  open_authoring: true
+  name: github
+  repo: CaoKewen/lxy-personal-site  # 你的 GitHub 仓库路径 (username/repo)
+  branch: main                      # 你的主分支
+# ↑↑↑ 到此为止 ↑↑↑
 
 # 2. 媒体（图片）设置：图片上传到哪里
 # (注意：我把它改到了 public/uploads，这更标准)
