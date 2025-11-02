@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>{{ title or "LXY's Learning Journal" }}</title>
   <link rel="stylesheet" href="/styles.css">
+  <!-- Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -28,5 +30,18 @@
       <p>© 2025 {{ site.author.name }} • Built with Eleventy</p>
     </div>
   </footer>
+
+  <!-- Netlify Identity 重定向脚本 -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/editor/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>
