@@ -5,77 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
 
-  <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
-  <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
-
-  <script type="text/yaml" id="config">
-    # -----------------------------------------------------------------
-    # Decap CMS 配置文件 (为你的 Eleventy 项目定制)
-    # -----------------------------------------------------------------
-
-    backend:
-      name: github
-      repo: CaoKewen/lxy-personal-site
-      branch: main
-
-      # 使用纯客户端 'pkce' 登录流程
-      auth_type: pkce
-      app_id: "Ov23liCLyZGsPqEEQw65" # 这是你 GitHub App 的 Client ID
-
-    # 2. 媒体（图片）设置
-    # .eleventy.js 会把 src/static 的内容复制到 _site/
-    # 所以 public_folder 必须是 /uploads
-    media_folder: "src/static/uploads"
-    public_folder: "/uploads"
-
-    # 3. 内容集合 (Collections)：定义哪些内容可以编辑
-    collections:
-      # ---------------------------------
-      # 集合 A：全局网站设置
-      # 对应文件: src/_data/site.json
-      # ---------------------------------
-      - name: "settings"
-        label: "⚙️ 网站设置"
-        files:
-          - file: "src/_data/site.json"
-            label: "网站信息"
-            name: "site_data"
-            fields:
-              - { label: "网站标题", name: "title", widget: "string" }
-              - { label: "网站URL", name: "url", widget: "string" }
-
-      # ---------------------------------
-      # 集合 B：独立页面 (比如 "About")
-      # 对应文件: src/about.md
-      # ---------------------------------
-      - name: "pages"
-        label: "📄 独立页面"
-        files:
-          - file: "src/about.md"
-            label: "关于我们 (About)"
-            name: "about"
-            fields:
-              - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/base.njk" }
-              - { label: "页面标题", name: "title", widget: "string" }
-              - { label: "页面内容", name: "body", widget: "markdown" }
-
-      # ---------------------------------
-      # 集合 C：博客文章
-      # 对应文件夹: src/posts/
-      # ---------------------------------
-      - name: "blog"
-        label: "✍️ 博客文章"
-        folder: "src/posts"
-        create: true
-        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-        fields:
-          - { label: "文章标题", name: "title", widget: "string" }
-          - { label: "发布日期", name: "date", widget: "datetime" }
-          - { label: "文章正文", name: "body", widget: "markdown" }
-  </script>
-
+  <!-- 使用 Decap CMS 内置的 React，不需要单独引入 -->
 </head>
 <body>
-  <script src="https://unpkg.com/decap-cms-app@^3.0.0/dist/decap-cms-app.js"></script>
+  <!-- Decap CMS 脚本 -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+  <!-- 配置 -->
+  <script>
+    CMS.init({
+      config: {
+        backend: {
+          name: 'github',
+          repo: 'CaoKewen/lxy-personal-site',
+          branch: 'main',
+          auth_type: 'pkce',
+          app_id: 'Ov23liCLyZGsPqEEQw65'
+        },
+
+        media_folder: 'src/static/uploads',
+        public_folder: '/uploads',
+
+        collections: [
+          {
+            name: 'settings',
+            label: '⚙️ 网站设置',
+            files: [
+              {
+                file: 'src/_data/site.json',
+                label: '网站信息',
+                name: 'site_data',
+                fields: [
+                  { label: '网站标题', name: 'title', widget: 'string' },
+                  { label: '网站URL', name: 'url', widget: 'string' }
+                ]
+              }
+            ]
+          },
+          {
+            name: 'pages',
+            label: '📄 独立页面',
+            files: [
+              {
+                file: 'src/about.md',
+                label: '关于我们 (About)',
+                name: 'about',
+                fields: [
+                  { label: 'Layout', name: 'layout', widget: 'hidden', default: 'layouts/base.njk' },
+                  { label: '页面标题', name: 'title', widget: 'string' },
+                  { label: '页面内容', name: 'body', widget: 'markdown' }
+                ]
+              }
+            ]
+          },
+          {
+            name: 'blog',
+            label: '✍️ 博客文章',
+            folder: 'src/posts',
+            create: true,
+            slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
+            fields: [
+              { label: '文章标题', name: 'title', widget: 'string' },
+              { label: '发布日期', name: 'date', widget: 'datetime' },
+              { label: '文章正文', name: 'body', widget: 'markdown' }
+            ]
+          }
+        ]
+      }
+    });
+  </script>
 </body>
 </html>
