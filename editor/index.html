@@ -4,174 +4,82 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
-  <style>
-    .login-container {
-      max-width: 400px;
-      margin: 100px auto;
-      padding: 30px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    }
-    .login-container h2 {
-      margin-top: 0;
-    }
-    .login-container input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      box-sizing: border-box;
-      font-size: 14px;
-    }
-    .login-container button {
-      width: 100%;
-      padding: 12px;
-      background: #0066cc;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    .login-container button:hover {
-      background: #0052a3;
-    }
-    .error {
-      color: red;
-      font-size: 14px;
-      margin-top: 10px;
-    }
-    #cms-root {
-      display: none;
-    }
-  </style>
 </head>
 <body>
-  <div class="login-container" id="login-form">
-    <h2>登录 CMS</h2>
-    <p>输入你的 GitHub Personal Access Token</p>
-    <input type="password" id="token-input" placeholder="ghp_xxxxxxxxxxxx" />
-    <button onclick="loginWithToken()">登录</button>
-    <div class="error" id="error-message"></div>
-  </div>
-
-  <div id="cms-root"></div>
-
+  <!-- Decap CMS 会自动挂载到这里 -->
   <script src="https://unpkg.com/decap-cms@^3.1.0/dist/decap-cms.js"></script>
 
-  <script>
-    function loginWithToken() {
-      const token = document.getElementById('token-input').value.trim();
-      const errorEl = document.getElementById('error-message');
+  <!-- 内联 YAML 配置 -->
+  <script type="module">
+    window.CMS_MANUAL_INIT = true;
 
-      if (!token) {
-        errorEl.textContent = '请输入 Token';
-        return;
-      }
+    const config = {
+      backend: {
+        name: 'github',
+        repo: 'CaoKewen/lxy-personal-site',
+        branch: 'main',
+        auth_type: 'pkce',
+        app_id: 'Ov23liCLyZGsPqEEQw65'
+      },
 
-      if (!token.startsWith('ghp_') && !token.startsWith('github_pat_')) {
-        errorEl.textContent = 'Token 格式不正确（应该以 ghp_ 或 github_pat_ 开头）';
-        return;
-      }
+      media_folder: 'src/static/uploads',
+      public_folder: '/uploads',
 
-      // 保存 token 到 localStorage
-      localStorage.setItem('github-token', token);
-
-      // 隐藏登录表单
-      document.getElementById('login-form').style.display = 'none';
-      document.getElementById('cms-root').style.display = 'block';
-
-      // 初始化 CMS
-      initCMS(token);
-    }
-
-    function initCMS(token) {
-      CMS.init({
-        config: {
-          backend: {
-            name: 'github',
-            repo: 'CaoKewen/lxy-personal-site',
-            branch: 'main',
-            // 使用自定义 token
-            auth_type: 'implicit',
-            proxy_url: 'https://api.github.com',
-            base_url: '',
-            auth_endpoint: ''
-          },
-
-          media_folder: 'src/static/uploads',
-          public_folder: '/uploads',
-
-          collections: [
+      collections: [
+        {
+          name: 'settings',
+          label: '⚙️ 网站设置',
+          files: [
             {
-              name: 'settings',
-              label: '⚙️ 网站设置',
-              files: [
-                {
-                  file: 'src/_data/site.json',
-                  label: '网站信息',
-                  name: 'site_data',
-                  fields: [
-                    { label: '网站标题', name: 'title', widget: 'string' },
-                    { label: '网站URL', name: 'url', widget: 'string' }
-                  ]
-                }
-              ]
-            },
-            {
-              name: 'pages',
-              label: '📄 独立页面',
-              files: [
-                {
-                  file: 'src/about.md',
-                  label: '关于我们 (About)',
-                  name: 'about',
-                  fields: [
-                    { label: 'Layout', name: 'layout', widget: 'hidden', default: 'layouts/base.njk' },
-                    { label: '页面标题', name: 'title', widget: 'string' },
-                    { label: '页面内容', name: 'body', widget: 'markdown' }
-                  ]
-                }
-              ]
-            },
-            {
-              name: 'blog',
-              label: '✍️ 博客文章',
-              folder: 'src/posts',
-              create: true,
-              slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
+              file: 'src/_data/site.json',
+              label: '网站信息',
+              name: 'site_data',
               fields: [
-                { label: '文章标题', name: 'title', widget: 'string' },
-                { label: '发布日期', name: 'date', widget: 'datetime' },
-                { label: '文章正文', name: 'body', widget: 'markdown' }
+                { label: '网站标题', name: 'title', widget: 'string' },
+                { label: '网站URL', name: 'url', widget: 'string' }
               ]
             }
           ]
+        },
+        {
+          name: 'pages',
+          label: '📄 独立页面',
+          files: [
+            {
+              file: 'src/about.md',
+              label: '关于我们 (About)',
+              name: 'about',
+              fields: [
+                { label: 'Layout', name: 'layout', widget: 'hidden', default: 'layouts/base.njk' },
+                { label: '页面标题', name: 'title', widget: 'string' },
+                { label: '页面内容', name: 'body', widget: 'markdown' }
+              ]
+            }
+          ]
+        },
+        {
+          name: 'blog',
+          label: '✍️ 博客文章',
+          folder: 'src/posts',
+          create: true,
+          slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
+          fields: [
+            { label: '文章标题', name: 'title', widget: 'string' },
+            { label: '发布日期', name: 'date', widget: 'datetime' },
+            { label: '文章正文', name: 'body', widget: 'markdown' }
+          ]
         }
+      ]
+    };
+
+    // 等待 DOM 完全加载后再初始化
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        window.CMS.init({ config });
       });
-
-      // 拦截所有 GitHub API 请求，注入 token
-      const originalFetch = window.fetch;
-      window.fetch = function(url, options = {}) {
-        if (url.includes('api.github.com') || url.includes('github.com')) {
-          options.headers = options.headers || {};
-          options.headers['Authorization'] = `token ${token}`;
-        }
-        return originalFetch(url, options);
-      };
+    } else {
+      window.CMS.init({ config });
     }
-
-    // 检查是否已有保存的 token
-    window.addEventListener('DOMContentLoaded', () => {
-      const savedToken = localStorage.getItem('github-token');
-      if (savedToken) {
-        document.getElementById('login-form').style.display = 'none';
-        document.getElementById('cms-root').style.display = 'block';
-        initCMS(savedToken);
-      }
-    });
   </script>
 </body>
 </html>
