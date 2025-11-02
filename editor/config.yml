@@ -2,11 +2,14 @@ backend:
   name: github
   repo: CaoKewen/lxy-personal-site
   branch: main
-  auth_type: pkce
-  app_id: Ov23liCLyZGsPqEEQw65
+  # 使用 test-repo 模式，直接用 token 登录
+  # 注意：这个方式适合个人使用，token 会保存在浏览器本地
 
 media_folder: "src/static/uploads"
 public_folder: "/uploads"
+
+# 本地测试模式（可选）
+# local_backend: true
 
 collections:
   - name: "settings"
