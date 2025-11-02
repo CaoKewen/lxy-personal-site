@@ -1,5 +1,6 @@
 backend:
-  name: test-repo
+  name: git-gateway
+  branch: main
 
 media_folder: "src/static/uploads"
 public_folder: "/uploads"
