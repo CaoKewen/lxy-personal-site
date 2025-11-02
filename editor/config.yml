@@ -1,0 +1,41 @@
+backend:
+  name: github
+  repo: CaoKewen/lxy-personal-site
+  branch: main
+  auth_type: pkce
+  app_id: Ov23liCLyZGsPqEEQw65
+
+media_folder: "src/static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "settings"
+    label: "⚙️ 网站设置"
+    files:
+      - file: "src/_data/site.json"
+        label: "网站信息"
+        name: "site_data"
+        fields:
+          - { label: "网站标题", name: "title", widget: "string" }
+          - { label: "网站URL", name: "url", widget: "string" }
+
+  - name: "pages"
+    label: "📄 独立页面"
+    files:
+      - file: "src/about.md"
+        label: "关于我们 (About)"
+        name: "about"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/base.njk" }
+          - { label: "页面标题", name: "title", widget: "string" }
+          - { label: "页面内容", name: "body", widget: "markdown" }
+
+  - name: "blog"
+    label: "✍️ 博客文章"
+    folder: "src/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "文章标题", name: "title", widget: "string" }
+      - { label: "发布日期", name: "date", widget: "datetime" }
+      - { label: "文章正文", name: "body", widget: "markdown" }
