@@ -2,12 +2,16 @@
 # Decap CMS 配置文件 (为你的 Eleventy 项目定制)
 # -----------------------------------------------------------------
 
-# ↓↓↓ 这是新的登录设置 ↓↓↓
 backend:
   name: github
-  repo: CaoKewen/lxy-personal-site  # 你的 GitHub 仓库路径 (username/repo)
+  repo: CaoKewen/lxy-personal-site  # 你的仓库
   branch: main                      # 你的主分支
-# ↑↑↑ 到此为止 ↑↑↑
+
+  # 使用更简单的纯客户端 'pkce' 登录流程
+  auth_type: pkce
+
+  # 把你从 GitHub 复制的 Client ID 粘贴到这里
+  app_id: "Ov23liCLyZGsPqEEQw65"
 
 # 2. 媒体（图片）设置：图片上传到哪里
 # (注意：我把它改到了 public/uploads，这更标准)
