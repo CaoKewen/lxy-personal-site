@@ -1,0 +1,33 @@
+:root{
+  --bg:#f8f9fb;
+  --text:#111827;
+  --accent:#2563eb;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+.container{
+  max-width:880px;
+  margin:0 auto;
+  padding:1rem;
+}
+.site-header{
+  background:#fff;
+  border-bottom:1px solid #e6e9ee;
+}
+.site-header .container{
+  display:flex;
+  gap:1rem;
+  align-items:center;
+  justify-content:space-between;
+}
+.site-header h1{margin:0;font-size:1.1rem}
+.site-header nav a{margin-left:0.75rem;color:var(--accent);text-decoration:none}
+.content h2{margin-top:0}
+.site-footer{padding:1rem 0;text-align:center;color:#6b7280}
+pre{background:#0b1220;color:#d1d5db;padding:1rem;overflow:auto;border-radius:6px}

@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+title: Home
+---
+<section>
+  <h2>Welcome to LXY's Learning Journal</h2>
+  <p>This site records learning notes, study reflections, and project summaries.</p>
+
+  <h3>Recent Posts</h3>
+  <ul>
+    {% for post in collections.posts | slice(0,5) %}
+      <li>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+        <small> — {{ post.date | readableDate }}</small>
+      </li>
+    {% else %}
+      <li>No posts yet — write the first one!</li>
+    {% endfor %}
+  </ul>
+</section>
