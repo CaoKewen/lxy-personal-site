@@ -1,27 +1,18 @@
 ---
 layout: layouts/base.njk
-title: Answer to homological algebra homework
-date: 2025-11-04
+title: Some thoughts of homological algebra homework
+date: 2025-07-01
 tags: posts
 ---
-
-Here is my homework of homological algebra, which is complished on my own.
-
-
-## 📄 Some proofs of ...
+- **Subject:** Homological algebra
+- **Note type:** Homewok
+- **Containing:** Detailed proof of some Homological algebra classic questions.
 
  PDF version is shown right here：
 
 <iframe src="/uploads/Answer_to_homological_algebra_homework.pdf" width="100%" height="800px" style="border: 1px solid #ddd; border-radius: 8px; margin: 2rem 0;"></iframe>
 
-
-## 📥 Download Link
+If there is any problem with showing the pdf, you are able to download the file by the following link:
 
 📎 [Download PDF](/uploads/Answer_to_homological_algebra_homework.pdf)
 
-
-## 🔗 相关资源
-
-- [arXiv 链接](https://arxiv.org)
-- [作者主页](https://example.com)
-- [相关讨论](https://mathoverflow.net)
