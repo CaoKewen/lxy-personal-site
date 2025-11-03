@@ -9,23 +9,29 @@ title: Home
   <h3>Recent Posts</h3>
   
   <!-- 调试信息 -->
-  <p style="color: red; font-size: 12px;">
-    Debug: collections.posts exists? {{ "yes" if collections.posts else "no" }}<br>
-    Debug: posts count: {{ collections.posts.length if collections.posts else 0 }}<br>
-    Debug: all collections: {{ collections | keys | join(", ") }}
+  <p style="color: red; font-size: 12px; border: 1px solid red; padding: 10px;">
+    🔍 Debug Info:<br>
+    collections.posts exists? {{ "YES" if collections.posts else "NO" }}<br>
+    posts count: {{ collections.posts.length if collections.posts else 0 }}<br>
+    collections.all count: {{ collections.all.length if collections.all else 0 }}
   </p>
   
-  {% set postslist = collections.posts %}
-  {% if postslist and postslist.length > 0 %}
-    <ul>
-      {% for post in postslist | reverse | slice(0, 5) %}
-        <li>
-          <a href="{{ post.url }}">{{ post.data.title }}</a>
-          <small> — {{ post.date | readableDate }}</small>
-        </li>
-      {% endfor %}
-    </ul>
+  {% if collections.posts %}
+    <p style="color: blue;">✅ collections.posts exists!</p>
+    {% if collections.posts.length > 0 %}
+      <p style="color: green;">✅ Found {{ collections.posts.length }} posts</p>
+      <ul>
+        {% for post in collections.posts | reverse %}
+          <li>
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+            <small> — {{ post.date | readableDate }}</small>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p style="color: orange;">⚠️ collections.posts is empty (length = 0)</p>
+    {% endif %}
   {% else %}
-    <p>No posts yet — write the first one!</p>
+    <p style="color: red;">❌ collections.posts does not exist!</p>
   {% endif %}
 </section>
