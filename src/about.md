@@ -15,23 +15,69 @@ permalink: /about/index.html
 </div>
 
 
-### Personal Details
-* **Name:** Xinyu Liu
-* **Email:** [lxytopology@163.com](mailto:lxytopology@163.com) 
-* **Website:** https://lxy-personal-site.vercel.app/
+## 👋 Introduction
 
-### Education
-* **M.S. in Mathematics** (Candidate)
-    * Capital Normal University (CNU), Beijing
-    * *Expected Graduation: June 2027*
-* **B.S. in Mathematics**
-    * Zhengzhou University (ZZU)
-    * *Graduated: June 2024*
+Hi! I'm **Xinyu Liu**, a Master's student in Mathematics at **Capital Normal University (CNU)** in Beijing, China.
 
-### Research Interests
-* **Primary Fields:** Stable Homotopy Theory, Category Theory, Chromatic Homotopy Theory.
-* **Specific Topics:** Algebraic K-Theory, algebraic structures in topology, and applications to geometric problems (e.g., invariants of manifolds, scissors congruence).
+I am passionate about the deep structures underlying modern topology. I am currently preparing for Ph.D. research and am **actively seeking a fully-funded Ph.D. position for the Fall 2027 intake.**
 
-### Academic Goals
-* **Objective:** Seeking a fully-funded **Ph.D. position** in Mathematics for the **Fall 2027** intake.
-* **Focus:** To join an active research group and contribute to stable homotopy theory or a related field under the guidance of a dedicated mentor.
+---
+
+## 🎓 Academic Background
+
+**Education**
+- **M.S. in Mathematics** — Capital Normal University (CNU, Beijing) (2024 - **Expected June 2027**)
+- **B.S. in Mathematics** — Zhengzhou University (ZZU) (2020 - 2024)
+
+**Research Interests**
+- **Primary Fields:** Stable Homotopy Theory, Chromatic Homotopy Theory, Higher Category Theory.
+
+- **Related Interests:** Algebraic K-Theory, model categories, and applications of homotopy theory to geometric topology (e.g., manifold invariants, scissors congruence).
+
+---
+
+## 📚 Current Focus
+
+I'm currently diving deep into:
+
+- **Stable Homotopy Theory**: Understanding the stable category through spectra
+- **Chromatic Methods**: Exploring the chromatic filtration and Morava K-theories
+- **Category-Theoretic Foundations**: Model categories, ∞-categories, and their applications
+
+My goal is to build a solid foundation in these areas to contribute meaningfully to research in homotopy theory.
+
+---
+
+## 💻 About This Site
+
+This website serves as my **public learning journal**. Here I:
+
+- Document notes from textbooks and research papers
+- Organize key concepts and theorems
+- Track my progress and understanding
+- Share insights with the mathematical community
+
+I believe in **learning in public** — making mistakes, asking questions, and growing through the process.
+
+---
+
+## 📫 Get in Touch
+
+I'm always excited to connect with fellow mathematicians and topology enthusiasts!
+
+- **Email**: [lxytopology@163.com](mailto:lxytopology@163.com)
+- **Location**: Beijing, China
+
+Feel free to reach out if you'd like to discuss topology, share resources, or collaborate on projects.
+
+---
+
+## 🌟 Beyond Mathematics
+
+When I'm not focused on topology, I enjoy:
+- 🔭 Watching popular science videos, especially about physics and astronomy.
+- 🎾 Playing tennis and badminton.
+- ☕ Relaxing and spending time with friends.
+---
+
+*Last updated: November 2025*
