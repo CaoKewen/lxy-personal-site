@@ -4,12 +4,25 @@ title: About
 permalink: /about/index.html
 ---
 
-# About Me
+# Academic Bio
 
-- Name: Xinyu Liu
-- Site: LXY's Learning Journal
-- Email: lxytopology@163.com
+### Personal Details
+* **Name:** Xinyu Liu
+* **Email:** lxytopology@163.com
+* **Website:** https://lxy-personal-site.vercel.app/
 
-I am a <strong>graduate student</strong> in the Department of Mathematics at Capital Normal University (CNU) in Beijing. My primary academic interests are <strong>Stable Homotopy Theory</strong>, <strong>Category Theory</strong>, and <strong>Chromatic Homotopy Theory</strong>. I am deeply fascinated by the algebraic and structural side of modern topology and am actively preparing to pursue Ph.D. research in this area.
+### Education
+* **M.S. in Mathematics** (Candidate)
+    * Capital Normal University (CNU), Beijing
+    * *Expected Graduation: June 2027*
+* **B.S. in Mathematics**
+    * Zhengzhou University (ZZU)
+    * *Graduated: June 2024*
 
-This website serves as my public learning journal, documenting my independent study of these topics. It is a space to organize notes from texts and papers, track key concepts, and log my preparation for future research. I am always excited to learn and welcome connections with others who share these interests.
+### Research Interests
+* **Primary Fields:** Stable Homotopy Theory, Category Theory, Chromatic Homotopy Theory.
+* **Specific Topics:** Algebraic K-Theory, algebraic structures in topology, and applications to geometric problems (e.g., invariants of manifolds, scissors congruence).
+
+### Academic Goals
+* **Objective:** Seeking a fully-funded **Ph.D. position** in Mathematics for the **Fall 2027** intake.
+* **Focus:** To join an active research group and contribute to stable homotopy theory or a related field under the guidance of a dedicated mentor.
