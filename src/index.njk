@@ -7,6 +7,14 @@ title: Home
   <p>This site records learning notes, study reflections, and project summaries.</p>
 
   <h3>Recent Posts</h3>
+  
+  <!-- 调试信息 -->
+  <p style="color: red; font-size: 12px;">
+    Debug: collections.posts exists? {{ "yes" if collections.posts else "no" }}<br>
+    Debug: posts count: {{ collections.posts.length if collections.posts else 0 }}<br>
+    Debug: all collections: {{ collections | keys | join(", ") }}
+  </p>
+  
   {% set postslist = collections.posts %}
   {% if postslist and postslist.length > 0 %}
     <ul>
