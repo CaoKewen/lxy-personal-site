@@ -14,9 +14,8 @@ permalink: /about/index.html
   <img src="/uploads/profile.jpg" alt="Xinyu Liu" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
 </div>
 
----
 
-# About Me
+## About Me
 
 ### Personal Details
 * **Name:** Xinyu Liu
