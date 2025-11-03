@@ -1,33 +1,305 @@
-:root{
-  --bg:#f8f9fb;
-  --text:#111827;
-  --accent:#2563eb;
+:root {
+  --bg: #f8f9fb;
+  --text: #111827;
+  --accent: #2563eb;
+  --border: #e6e9ee;
+  --card-bg: #ffffff;
+  --muted: #6b7280;
+  --code-bg: #0b1220;
 }
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family: system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.6;
+
+* {
+  box-sizing: border-box;
 }
-.container{
-  max-width:880px;
-  margin:0 auto;
-  padding:1rem;
+
+body {
+  margin: 0;
+  font-family: system-ui, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 17px;
 }
-.site-header{
-  background:#fff;
-  border-bottom:1px solid #e6e9ee;
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 1rem;
 }
-.site-header .container{
-  display:flex;
-  gap:1rem;
-  align-items:center;
-  justify-content:space-between;
+
+/* ========================================
+   页眉
+   ======================================== */
+.site-header {
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
 }
-.site-header h1{margin:0;font-size:1.1rem}
-.site-header nav a{margin-left:0.75rem;color:var(--accent);text-decoration:none}
-.content h2{margin-top:0}
-.site-footer{padding:1rem 0;text-align:center;color:#6b7280}
-pre{background:#0b1220;color:#d1d5db;padding:1rem;overflow:auto;border-radius:6px}
+
+.site-header .container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.site-header h1 a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.site-header h1 a:hover {
+  color: var(--accent);
+}
+
+.site-header nav a {
+  margin-left: 1.25rem;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.site-header nav a:hover {
+  color: var(--accent);
+}
+
+/* ========================================
+   主内容
+   ======================================== */
+.content {
+  background: var(--card-bg);
+  padding: 2.5rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.content h1 {
+  font-size: 2.25rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+.content h2 {
+  font-size: 1.75rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+.content h3 {
+  font-size: 1.35rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.content p {
+  margin-bottom: 1.25rem;
+  line-height: 1.8;
+}
+
+.content > *:first-child {
+  margin-top: 0;
+}
+
+/* ========================================
+   链接
+   ======================================== */
+.content a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.content a:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* ========================================
+   列表
+   ======================================== */
+.content ul,
+.content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+}
+
+/* 文章列表特殊样式 */
+.content > section > ul {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.content > section > ul > li {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.2s;
+}
+
+.content > section > ul > li:last-child {
+  border-bottom: none;
+}
+
+.content > section > ul > li:hover {
+  background: #f9fafb;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 6px;
+}
+
+.content > section > ul > li a {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--text);
+  border: none;
+}
+
+.content > section > ul > li a:hover {
+  color: var(--accent);
+}
+
+.content > section > ul > li small {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin-left: 0.5rem;
+}
+
+/* ========================================
+   代码
+   ======================================== */
+code {
+  background: #f3f4f6;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', Consolas, monospace;
+  font-size: 0.9em;
+  color: #e11d48;
+}
+
+pre {
+  background: var(--code-bg);
+  color: #d1d5db;
+  padding: 1.25rem;
+  overflow-x: auto;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  line-height: 1.6;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+  font-size: 0.9rem;
+}
+
+/* ========================================
+   引用块
+   ======================================== */
+blockquote {
+  border-left: 4px solid var(--accent);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ========================================
+   图片
+   ======================================== */
+.content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   表格
+   ======================================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  background: #f9fafb;
+  font-weight: 600;
+}
+
+/* ========================================
+   页脚
+   ======================================== */
+.site-footer {
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+}
+
+/* ========================================
+   响应式设计
+   ======================================== */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .content {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  .content h1 {
+    font-size: 1.75rem;
+  }
+
+  .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .site-header nav a {
+    margin-left: 0.75rem;
+    font-size: 0.9rem;
+  }
+}
