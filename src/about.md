@@ -11,7 +11,7 @@ permalink: /about/index.html
     <p style="font-size: 1rem; color: #6b7280;"></p>
   </div>
   <!-- 如果你想添加照片，取消注释下面这行 -->
-  <img src="/uploads/profile.jpg" alt="Xinyu Liu" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+  <img src="/uploads/profile.png" alt="Xinyu Liu" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
 </div>
 
 
