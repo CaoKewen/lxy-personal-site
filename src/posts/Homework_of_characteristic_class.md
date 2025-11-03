@@ -1,14 +1,15 @@
 ---
 layout: layouts/base.njk
-title: Characteristic Classes — Exercise 2.26
+title: Homework of Characteristic Classes — Exercise 2.26
 date: 2025-11-02
 tags: posts
 ---
 
-## Note information
+### Note information
 
 - **Subject:** Characteristic Classes
 - **Type:** Homework
+- **Resource:** the book name (Exercise 2.26)
 - **Containing:** Proof of homeomorphism between Stiefel and Grassmann manifolds, and exploration of their topological relationship through orthogonal group quotients.
 
 ---
@@ -27,10 +28,10 @@ This result gives a geometric realization of the Grassmann manifold as a **homog
 
 ---
 
- ## PDF version is shown right here：
+ ### PDF version is shown right here：
 
 <iframe src="/uploads/Exercise.pdf" width="100%" height="800px" style="border: 1px solid #ddd; border-radius: 8px; margin: 2rem 0;"></iframe>
 
 If there is any problem with showing the pdf, you are able to download the file by the following link:
 
-📎 [Download PDF](/uploads/Exercise 2.26.pdf)
+📎 [Download PDF](/uploads/Exercise.pdf)
