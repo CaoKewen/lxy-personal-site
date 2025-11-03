@@ -1,8 +1,11 @@
 ---
+layout: layouts/base.njk
 title: 我的第一篇文章
 date: 2025-11-03
 tags: posts
 ---
+
+# 我的第一篇文章
 
 欢迎来到我的学习日志！这是我搭建个人网站后的第一篇文章。
 
@@ -18,6 +21,7 @@ tags: posts
 ## 遇到的挑战
 
 搭建过程中遇到了不少问题：
+
 - Netlify 超出使用限制
 - CMS 认证配置复杂
 - 最终选择了 Vercel + GitHub 的方案
@@ -25,5 +29,10 @@ tags: posts
 ## 收获
 
 虽然过程曲折，但最终成功了！这让我对 Web 开发有了更深的理解。
+
+示例代码：
+```javascript
+console.log("Hello, 我的博客!");
+```
 
 **很有成就感！** 🎉
