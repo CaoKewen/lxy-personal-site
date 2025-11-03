@@ -4,7 +4,7 @@ title: About
 permalink: /about/index.html
 ---
 
-# Academic Bio
+# About Me
 
 ### Personal Details
 * **Name:** Xinyu Liu
