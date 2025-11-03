@@ -7,7 +7,7 @@ permalink: /about/index.html
 <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;">
   <div style="flex: 1;">
     <h1 style="margin-top: 0;">About Me</h1>
-    <p style="font-size: 1.2rem; color: #6b7280; margin-bottom: 0.5rem;">Email: lxytopology@163.com</p>
+    <p style="font-size: 1.2rem; color: #1f2937; margin-bottom: 0.5rem;">Email: lxytopology@163.com</p>
     <p style="font-size: 1.2rem; color: #6b7280; margin-bottom: 0.5rem;"></p>
     <p style="font-size: 1rem; color: #6b7280;"></p>
   </div>
