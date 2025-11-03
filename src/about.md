@@ -7,6 +7,7 @@ permalink: /about/index.html
 <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;">
   <div style="flex: 1;">
     <h1 style="margin-top: 0;">About Me</h1>
+    <p style="font-size: 1.2rem; color: #6b7280; margin-bottom: 0.5rem;">Email: lxytopology@163.com</p>
     <p style="font-size: 1.2rem; color: #6b7280; margin-bottom: 0.5rem;"></p>
     <p style="font-size: 1rem; color: #6b7280;"></p>
   </div>
@@ -57,18 +58,7 @@ This website serves as my **public learning journal**. Here I:
 - Track my progress and understanding
 - Share insights with the mathematical community
 
-I believe in **learning in public** — making mistakes, asking questions, and growing through the process.
-
----
-
-## 📫 Get in Touch
-
-I'm always excited to connect with fellow mathematicians and topology enthusiasts!
-
-- **Email**: [lxytopology@163.com](mailto:lxytopology@163.com)
-- **Location**: Beijing, China
-
-Feel free to reach out if you'd like to discuss topology, share resources, or collaborate on projects.
+I believe in **learning in public** — making mistakes, asking questions, and growing through the process. And I'm always excited to connect with fellow mathematicians and topology enthusiasts. Feel free to reach out if you'd like to discuss topology, share resources, or collaborate on projects.
 
 ---
 
