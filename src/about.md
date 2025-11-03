@@ -18,9 +18,7 @@ permalink: /about/index.html
 
 ## 👋 Introduction
 
-Hi! I'm **Xinyu Liu**, a Master's student in Mathematics at **Capital Normal University (CNU)** in Beijing, China.
-
-I am passionate about the deep structures underlying modern topology. I am currently preparing for Ph.D. research and am **actively seeking a fully-funded Ph.D. position for the Fall 2027 intake.**
+Hi! I'm **Xinyu Liu**, a M.S. candidate in the Department of Mathematics at Capital Normal University (CNU) in Beijing. I am passionate about the deep structures underlying modern topology. I am currently preparing for Ph.D. research and am **actively seeking a fully-funded Ph.D. position for the Fall 2027 intake.**
 
 ---
 
