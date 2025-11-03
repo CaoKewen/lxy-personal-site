@@ -16,14 +16,16 @@ tags: posts
 
 ### Overview
 
-This note focuses on the structure of **Stiefel manifolds** \( V_k(\mathbb{R}^n) \) and **Grassmann manifolds** \( G_k(\mathbb{R}^n) \), as well as their connection through quotient spaces of the orthogonal group \( O(n) \).  
+This note focuses on the structure of **Stiefel manifolds** $V_k(\mathbb{R}^n)$ and **Grassmann manifolds** $G_k(\mathbb{R}^n)$, as well as their connection through quotient spaces of the orthogonal group $O(n)$.
+
 It proves the existence of a homeomorphism
 
-\[
+$$
 \psi_{k,n}: O(n)/(O(n-k)O'(k)) \longrightarrow G_{k,n},
-\]
+$$
 
-and demonstrates the commutative relationship among \( O(n) \), \( V_{k,n} \), and \( G_{k,n} \).  
+and demonstrates the commutative relationship among $O(n)$, $V_{k,n}$, and $G_{k,n}$.
+
 This result gives a geometric realization of the Grassmann manifold as a **homogeneous space**, forming a theoretical basis for understanding **characteristic classes** and **fiber bundle topology**.
 
 ---
