@@ -6,7 +6,7 @@ permalink: /about/index.html
 
 <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;">
   <div style="flex: 1;">
-    <h1 style="margin-top: 0;">Xinyu Liu</h1>
+    <h1 style="margin-top: 0;">About Me</h1>
     <p style="font-size: 1.2rem; color: #6b7280; margin-bottom: 0.5rem;"></p>
     <p style="font-size: 1rem; color: #6b7280;"></p>
   </div>
@@ -14,8 +14,6 @@ permalink: /about/index.html
   <img src="/uploads/profile.png" alt="Xinyu Liu" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
 </div>
 
-
-## About Me
 
 ### Personal Details
 * **Name:** Xinyu Liu
