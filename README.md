@@ -1,6 +1,8 @@
-# LXY's Learning Journal
+# Xinyu's Personal Website
 
-This is a simple Eleventy (11ty) personal site template for LXY's Learning Journal.
+This is a simple and fast personal website template built with Eleventy (11ty).
+
+This project was a first trial in 11ty, built with love for my dear boyfriend, Xinyu Liu.
 
 Features
 - Home, About, Posts listing
@@ -38,7 +40,3 @@ Repository structure
   - about.md
   - posts/
     - 2025-11-02-first-post.md
-
-If you want, I can also provide:
-- A branch-ready zip of all files (you’ll need to create the repo and upload).
-- Step-by-step Netlify configuration instructions.
