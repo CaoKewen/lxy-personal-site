@@ -7,20 +7,14 @@ permalink: /about/index.html
 <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;">
   <div style="flex: 1;">
     <h1 style="margin-top: 0;">About Me</h1>
+    <p style="font-size: 1.2rem; color: #1f2937; margin-bottom: 0.5rem;">Name: Xinyu Liu</p>
     <p style="font-size: 1.2rem; color: #1f2937; margin-bottom: 0.5rem;">Email: lxytopology@163.com</p>
-    <p style="font-size: 1.2rem; color: #6b7280; margin-bottom: 0.5rem;"></p>
     <p style="font-size: 1rem; color: #6b7280;"></p>
   </div>
   <!-- 如果你想添加照片，取消注释下面这行 -->
   <img src="/uploads/profile.png" alt="Xinyu Liu" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
 </div>
 
-
-## 👋 Introduction
-
-Hi! I'm **Xinyu Liu**, a M.S. candidate in the Department of Mathematics at Capital Normal University (CNU) in Beijing. I am passionate about the deep structures underlying modern topology. I am currently preparing for Ph.D. research and am **actively seeking a fully-funded Ph.D. position for the Fall 2027 intake.**
-
----
 
 ## 🎓 Academic Background
 
@@ -62,7 +56,7 @@ I believe in **learning in public** — making mistakes, asking questions, and g
 
 ## 🌟 Beyond Mathematics
 
-When I'm not focused on topology, I enjoy:
+I enjoy:
 - 🔭 Watching popular science videos, especially about physics and astronomy.
 - 🎾 Playing tennis and badminton.
 - ☕ Relaxing and spending time with friends.
