@@ -3,17 +3,15 @@ layout: layouts/base.njk
 title: Homological Algebra — Homework Solutions
 date: 2025-07-01
 tags: posts
+category: Homework
 ---
 ### Note information
 
 - **Subject:** Homological Algebra  
-- **Type:** Homework
 - **Resource:** the book where the questions are from
 - **Containing:** Proofs concerning flat and projective modules, exactness of tensor and Hom functors, and projective objects in chain complexes.
 
----
-
-### Overview
+### Overview and Notes
 
 This note provides detailed proofs of several fundamental results in **homological algebra**, focusing on the behavior of tensor and Hom functors, the characterization of flat and projective modules, and the structure of projective objects in chain complexes.
 
@@ -26,13 +24,12 @@ Key topics include:
 
 These results provide the categorical and homological foundation for deeper study of **derived functors**, **triangulated categories**, and **derived categories**—core tools in modern algebraic geometry and category theory.
 
----
-
  ### PDF version is shown right here：
+
+ If there is any problem with showing the pdf, you are able to download the file by the following link:
+📎 [Download PDF](/uploads/Answer_to_homological_algebra_homework.pdf)
 
 <iframe src="/uploads/Answer_to_homological_algebra_homework.pdf" width="100%" height="800px" style="border: 1px solid #ddd; border-radius: 8px; margin: 2rem 0;"></iframe>
 
-If there is any problem with showing the pdf, you are able to download the file by the following link:
 
-📎 [Download PDF](/uploads/Answer_to_homological_algebra_homework.pdf)
 
