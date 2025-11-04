@@ -1,5 +1,5 @@
 :root {
-  --bg: #f8f9fb;
+  --bg: #f5f3f0;  /* 改成纸张米色 */
   --text: #111827;
   --accent: #2563eb;
   --border: #e6e9ee;
@@ -15,10 +15,49 @@
 body {
   margin: 0;
   font-family: system-ui, Segoe UI, Roboto, "Helvetica Neue", Arial;
-  background: var(--bg);
   color: var(--text);
   line-height: 1.7;
   font-size: 17px;
+  
+  /* 纸张质感背景 */
+  background: var(--bg);
+  
+  /* 添加微妙的纹理 */
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,.01) 2px,
+      rgba(0,0,0,.01) 4px
+    );
+  
+  position: relative;
+}
+
+/* 数学符号水印 */
+body::before {
+  content: '∫ ∂ ∇ ∑ π ∞ ≈ ⊕ ⊗ ∈ ⊂ ℝ ℂ ℤ';
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-5deg);
+  font-size: 120px;
+  color: rgba(0, 0, 0, 0.015);
+  z-index: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  font-family: 'Times New Roman', serif;
+  letter-spacing: 0.3em;
+}
+
+/* 确保所有内容在水印之上 */
+.site-header,
+.container,
+.content,
+.site-footer {
+  position: relative;
+  z-index: 1;
 }
 
 .container {
@@ -31,13 +70,14 @@ body {
    页眉
    ======================================== */
 .site-header {
-  background: var(--card-bg);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
   padding: 0.75rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .site-header .container {
@@ -84,7 +124,7 @@ body {
   padding: 2.5rem;
   margin: 2rem auto;
   border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .content h1 {
@@ -283,6 +323,10 @@ th {
 @media (max-width: 768px) {
   body {
     font-size: 16px;
+  }
+  
+  body::before {
+    font-size: 80px;
   }
 
   .content {
