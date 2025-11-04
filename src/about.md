@@ -27,7 +27,6 @@ permalink: /about/index.html
 
 - **Related Interests:** Algebraic K-Theory, model categories, and applications of homotopy theory to geometric topology (e.g., manifold invariants, scissors congruence).
 
----
 
 ## 📚 Current Focus
 
@@ -39,7 +38,6 @@ I'm currently diving deep into:
 
 My goal is to build a solid foundation in these areas to contribute meaningfully to research in homotopy theory.
 
----
 
 ## 💻 About This Site
 
@@ -52,7 +50,6 @@ This website serves as my **public learning journal**. Here I:
 
 I believe in **learning in public** — making mistakes, asking questions, and growing through the process. And I'm always excited to connect with fellow mathematicians and topology enthusiasts. Feel free to reach out if you'd like to discuss topology, share resources, or collaborate on projects.
 
----
 
 ## 🌟 Beyond Mathematics
 
@@ -60,6 +57,6 @@ I enjoy:
 - 🔭 Watching popular science videos, especially about physics and astronomy.
 - 🎾 Playing tennis and badminton.
 - ☕ Relaxing and spending time with friends.
----
+
 
 *Last updated: November 2025*
