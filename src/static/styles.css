@@ -337,3 +337,85 @@ th {
     font-size: 0.9rem;
   }
 }
+
+/* ========================================
+   学术笔记风格微调（配合 Cambridge Ivory 配色）
+   ======================================== */
+
+/* 主内容卡片阴影更柔和，像悬浮的纸页 */
+.content {
+  background: var(--card-bg);
+  padding: 2.5rem;
+  margin: 2.5rem auto;
+  border-radius: 12px;
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.04),
+    0 1px 2px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border);
+}
+
+/* 页眉透明度更高，像磨砂玻璃 */
+.site-header {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* 文章标题稍微亮一点，更聚焦 */
+.content h1, .content h2, .content h3 {
+  color: #1a1a1a;
+}
+
+/* 二级标题加淡淡的底线和间距 */
+.content h2 {
+  border-bottom: 1px solid #e5e2db;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.2rem;
+}
+
+/* 链接颜色更温柔，hover时有轻微亮度变化 */
+.content a {
+  color: #3c5aa6;
+  transition: all 0.2s ease;
+}
+.content a:hover {
+  color: #24428f;
+  border-bottom-color: #24428f;
+}
+
+/* 引用块更像笔记框 */
+blockquote {
+  background: #f7f6f1;
+  border-left: 4px solid #3356a3;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+  font-style: italic;
+  color: #4b4b4b;
+}
+
+/* 页脚更轻盈 */
+.site-footer {
+  color: #8a8a8a;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+  padding-top: 2rem;
+}
+
+/* 页面内容的整体呼吸感 */
+.container {
+  max-width: 900px;
+  padding: 1.25rem;
+}
+
+/* 图片阴影更柔和 */
+.content img {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* 数学水印再淡一点 */
+body::before {
+  color: rgba(0, 0, 0, 0.02);
+}
+
