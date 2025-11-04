@@ -22,7 +22,7 @@ body {
   /* 纸张质感背景 */
   background: var(--bg);
   
-  /* 添加微妙的纹理 */
+  /* /* 添加微妙的纹理 */
   background-image: 
     repeating-linear-gradient(
       0deg,
@@ -30,7 +30,7 @@ body {
       transparent 2px,
       rgba(0,0,0,.01) 2px,
       rgba(0,0,0,.01) 4px
-    );
+    ); */
   
   position: relative;
 }
