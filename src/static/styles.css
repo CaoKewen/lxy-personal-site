@@ -1,11 +1,11 @@
 :root {
-  --bg: #f5f3f0;  /* 改成纸张米色 */
-  --text: #111827;
-  --accent: #2563eb;
-  --border: #e6e9ee;
-  --card-bg: #ffffff;
-  --muted: #6b7280;
-  --code-bg: #0b1220;
+  --bg: #f8f5f1;         /* 柔和的浅纸色背景 */
+  --text: #2b2b2b;       /* 深灰，阅读舒适 */
+  --accent: #4b70d6;     /* 柔和的学院蓝，不刺眼 */
+  --border: #e4e0da;     /* 浅暖灰，卡片边框 */
+  --card-bg: #ffffff;    /* 纯白内容卡片 */
+  --muted: #6c757d;      /* 温和灰，用于次要文本 */
+  --code-bg: #1c1f2b;    /* 深蓝灰代码背景 */
 }
 
 * {
