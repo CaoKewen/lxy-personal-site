@@ -13,6 +13,31 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // 按分类创建集合
+  eleventyConfig.addCollection("homework", function(collectionApi) {
+    return collectionApi.getAll().filter(item => {
+      return item.data.category === "Homework" && item.data.tags && item.data.tags.includes("posts");
+    }).sort((a, b) => b.date - a.date);
+  });
+
+  eleventyConfig.addCollection("paperReading", function(collectionApi) {
+    return collectionApi.getAll().filter(item => {
+      return item.data.category === "PaperReading" && item.data.tags && item.data.tags.includes("posts");
+    }).sort((a, b) => b.date - a.date);
+  });
+
+  eleventyConfig.addCollection("insights", function(collectionApi) {
+    return collectionApi.getAll().filter(item => {
+      return item.data.category === "Insights" && item.data.tags && item.data.tags.includes("posts");
+    }).sort((a, b) => b.date - a.date);
+  });
+
+  eleventyConfig.addCollection("musings", function(collectionApi) {
+    return collectionApi.getAll().filter(item => {
+      return item.data.category === "Musings" && item.data.tags && item.data.tags.includes("posts");
+    }).sort((a, b) => b.date - a.date);
+  });
+
   // Date filter - 格式化日期
   eleventyConfig.addFilter("readableDate", dateObj => {
     const { DateTime } = require("luxon");
